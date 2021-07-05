@@ -1,30 +1,10 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
-import { getSearchGifs } from "../../helpers/getGifs";
+import { useDataGifs } from "../../hooks/useDataGifs";
 import "./SquareDataGifs.css";
 
 const SquareData = ({ word }) => {
-  const [error, setError] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [data, setData] = useState([]);
-
-  const getData = useCallback(async () => {
-    try {
-      setLoading(true);
-      const data = await getSearchGifs(word);
-      // setState
-      setData(data);
-      setLoading(false);
-    } catch (err) {
-      console.log(err.message);
-      setLoading(false);
-      setError(true);
-    }
-  }, [word]);
-
-  useEffect(() => {
-    getData();
-  }, [getData]);
+  const { error, loading, data } = useDataGifs(word);
 
   return (
     <>
