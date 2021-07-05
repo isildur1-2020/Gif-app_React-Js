@@ -1,0 +1,8 @@
+.SquareData__item {
+  position: relative;
+}
+.SquareData__item h3 {
+  position: absolute;
+  background-color: var(--color-two);
+  opacity: 0.8;
+}

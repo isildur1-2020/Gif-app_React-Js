@@ -1,0 +1,35 @@
+.AddCategory {
+  height: 100px;
+  background-color: var(--color-two);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AddCategory__input {
+  width: 80%;
+  height: 50px;
+  padding: 0 20px;
+  font-size: 2.5rem;
+  border: none;
+  outline: none;
+  background-color: var(--color-one);
+}
+.AddCategory__input:focus {
+  border: 1px solid var(--color-three);
+}
+.AddCategory__button-search,
+.AddCategory__button-delete {
+  width: 5%;
+  height: 50px;
+  border: none;
+  background-color: var(--color-three);
+  font-size: 1.8rem;
+}
+.AddCategory__button-delete {
+  margin-left: 1px;
+  background-color: var(--color-four);
+}
+.AddCategory__button:hover,
+.AddCategory__button:active {
+  opacity: 0.8;
+}

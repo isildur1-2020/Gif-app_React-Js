@@ -1,0 +1,4 @@
+.SquareDataGrid {
+  display: flex;
+  flex-wrap: wrap;
+}

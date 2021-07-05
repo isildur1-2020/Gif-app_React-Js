@@ -1,0 +1,17 @@
+.Menu {
+  margin: 0;
+  padding: 0;
+}
+.Menu button {
+  margin: 0 10px 0 0;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  background-color: var(--color-two);
+  opacity: 0.8;
+}
+.Menu button:hover {
+  transition: 1s;
+  opacity: 1;
+}
