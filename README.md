@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Rick And Morthy - API
+Proyecto escrito en React Js consumiendo https://rickandmortyapi.com.
+HOOKS, React 17
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
