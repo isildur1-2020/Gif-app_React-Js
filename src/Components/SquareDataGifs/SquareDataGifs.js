@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import SquareItem from "../SquareItem/SquareItem";
 import { useDataGifs } from "../../hooks/useDataGifs";
 import "./SquareDataGifs.css";
 
@@ -14,10 +15,7 @@ const SquareData = ({ word }) => {
         <div className="SquareDataGrid">
           {data &&
             data.map(({ id, title, url }) => (
-              <div className="SquareData__item" key={id}>
-                <h3>{title}</h3>
-                <img src={url} alt={title} />
-              </div>
+              <SquareItem key={id} title={title} url={url} />
             ))}
         </div>
       ) : (
